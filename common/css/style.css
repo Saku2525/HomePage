@@ -1,0 +1,339 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+body {
+    color: #333333;
+}
+
+p { 
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+/*　リスト　*/
+#pageBodyMain ul li {
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+/*　見出し　*/
+#pageBodyMain h3 {
+    font-size: 16px;
+    line-height: 1.375;
+    padding: 5px;
+    margin-top: 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#pageBodySub h3 {
+    font-size: 16px;
+    line-height: 1.375;
+    padding: 5px;
+    margin-top: 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#pageBodyMain .pagetitle {
+    font-size: 26px;
+    background-color: #9b9b2b66;
+    padding: 5px 15px;
+    line-height: 1.231;
+    margin-top: 0;
+}
+
+#pageBodyMain .heading-typeA {
+    font-size: 20px;
+    color: cornflowerblue;
+    border-bottom: solid 1px cornflowerblue;
+    padding: 5px;
+    line-height: 1.333;
+}
+
+#pageBodyMain .heading-typeB {
+    font-size: 16px;
+    border-left: solid 5px #9b9b2b66;
+    padding: 8px;
+    line-height: 1.429;
+}
+
+#pageBodyMain .heading-typeC {
+    font-size: 14px;
+}
+
+/*　グローバルナビ　*/
+.globalNavi {
+    border: solid #CCCCCC;
+    border-width: 1px 0;
+    padding: 10px 0;
+}
+
+.globalNavi ul {
+    margin: 0;
+    padding: 0;
+}
+
+.globalNavi ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.globalNavi ul li {
+    list-style: none;
+    width: 235px;
+    float: left;
+    border-left: solid 1px #CCCCCC;
+    padding: 0 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+.globalNavi ul li:first-child {
+    border-left: none;
+}
+.globalNavi ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.globalNavi ul li a:hover,
+.globalNavi ul li.current a {
+    background-color: #9b9b2b66;
+}
+
+/*　パンくずリスト　*/
+.topicPath { font-size: 12px; }
+
+/*　メインビジュアル　*/
+#pageBody .mainVisual {
+    position: relative;
+}
+
+#pageBody .mainVisual .mainVisualText {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.4);
+    width: 330px;
+    padding: 10px 25px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#pageBody .mainVisual .mainVisualText h1 {
+    font-size: 26px;
+    line-height: 1.0;
+    margin: 0;
+}
+
+#pageBody .mainVisual .mainVisualText p {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+/*　お知らせ　*/
+#pageBodySub .newsList {
+    margin-top: 40px;
+}
+
+#pageBodySub .newsList ul {
+    list-style: none;
+    padding: 0;
+}
+#pageBodySub .newsList ul li {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 10px 5px;
+}
+#pageBodySub .newsList ul li  time {
+        font-weight: 800;
+}
+
+/*　表　*/
+table {
+    font-size: 14px;
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td{
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+}
+
+table th {
+    background-color: #EEEEEE;
+    text-align: left;
+}
+
+table caption {
+    text-align: left;
+    font-weight: bold;
+}
+
+/*　INDEX　*/
+#pageBody .portforioIndex {
+    margin-top: 20px;
+}
+
+.portforioIndex:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.portforioIndex article {
+    width: 220px;
+    float: left;
+    margin-left: 30px;
+}
+
+.portforioIndex article:first-child {
+    margin-left: 0;
+}
+
+
+
+/*　一覧ページ　*/
+#pageBodyMain .articleList {
+    border: solid 1px #CCCCCC;
+    margin-bottom: 30px;
+}
+
+#pageBodyMain .articleList a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+#pageBodyMain .articleList a:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#pageBodyMain .articleList a:hover {
+    opacity: 0.7;
+}
+
+#pageBodyMain .articleList a .articleListText {
+    width: 370px;
+    float: right;
+}
+#pageBodyMain .articleList a .articleListText h1 {
+    font-size: 26px;
+    line-height: 1.308;
+}
+#pageBodyMain .articleList a .articleListText p {
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+#pageBodyMain .articleList a .articleListImage {
+    width: 300px;
+    float: left;
+}
+#pageBodyMain .articleList a .articleListImage img {
+    vertical-align: bottom;
+}
+
+/*　区切り線・余白　*/
+#pageBodyMain .articleDetailHead {
+    border-bottom: solid 1px #CCCCCC;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+#pageBodyMain .articleDetailFoot {
+    border-top: solid 1px #CCCCCC;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+/*　リンク情報　*/
+.articleDetailFoot {
+    padding: 10px;
+    border: solid 1px #CCCCCC;
+}
+
+    .articleDetailFoot p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+/*　リンク　*/
+a { color: #999966; }
+a:hover { color: #996600; }
+
+/*　ページ　*/
+#page {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*　ページヘッダー　*/
+#siteTitle {
+    font-size: 30px;
+    line-height: 1.0;
+    margin-bottom: 0;
+    font-family: 'Vollkorn', serif;
+}
+
+#catchcopy {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.img-left { float: left; }
+.clear { clear: both; }
+
+/*　ページフッター　*/
+#pageFoot{
+    border-top: solid 1px #CCCCCC;
+    margin-top: 15px;
+}
+#pageFoot #copyright small {
+        font-size: 12px;
+        line-height: 1.5;
+}
+
+/*　ページの先頭に戻る　*/
+.pagetop {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.pagetop a {
+    background-image: url("../../Solution1/images/yazirusi.png");
+    background-repeat: no-repeat;
+    background-position: 0 35%;
+    padding-left: 25px;
+}
+/*　ページボディ　*/
+#pageBody {
+    margin-top: 30px;
+}
+
+#pageBody:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#pageBodyMain {
+    width: 720px;
+    float: left;
+}
+
+#pageBodySub {
+    width: 220px;
+    float: right;
+}

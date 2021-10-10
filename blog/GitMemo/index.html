@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>Gitメモ | BLOG | Saku SITE(さくサイト)</title>
+    <meta name="description" content="Gitを学ぶ際に出てくる用語やコマンドのメモです。">
+    <link rel="stylesheet" href="../../common/css/normalize.css">
+    <link rel="stylesheet" href="../../common/css/style.css">
+</head>
+
+<body>
+    <div id="page">
+
+        <div id="pageBody">
+
+            <div id="pageBodyMain">
+                <article class="articleDetail">
+                    <header class="articleDetailHead">
+                        <h1 class="pagetitle">～Gitメモ～</h1>
+                        <nav class="globalNavi">
+                            <ul>
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../Solution1/index.html">WORK</a></li>
+                                <li class="current"><a href="../index.html">BLOG</a></li>
+                            </ul>
+                        </nav>
+                        <p class="topicPath"><a href="../../index.html">HOME</a> &gt; <a href="../index.html">BLOG</a> &gt; Gitメモ</p>
+
+                        <div style="text-align: center">
+                            <img src="../images/Git_icon.png" alt="" width="250" height="200" alt="">
+                        </div>
+                        <div class="clear"></div>
+
+                        <section>
+                            <p id="catchcopy">Gitを学ぶ際に出てくる用語やコマンドのメモです。</p>
+                        </section>
+                    </header>
+
+                    <section class="articleDetailBody">
+                        <h2 class="heading-typeA">Gitメモ</h2>
+
+                        <h3 class="heading-typeB">Git用語</h3>
+
+                        <p>・記録を保存する操作を「コミットする」。また、その記録自体を「コミット」という。</p>
+                        <p>・　　　リポジトリ　　　　→　コミットをためていく場所。</p>
+                        <p>・　ローカルリポジトリ　　→　自分専用のリポジトリ。</p>
+                        <p>・　リモートリポジトリ　　→　ネットワーク上のリポジトリ。</p>
+                        <p>・　　　　クローン　　　　→　リポジトリをコピーすること。</p>
+                        <p>・ディレクトリ（CUI）</p>
+                        <p>　―ルートディレクトリ　　→　一番階層が浅いディレクトリ。</p>
+                        <p>　―ホームディレクトリ　　→　初期表示されるディレクトリ。</p>
+                        <p>　―カレントディレクトリ　→　現在のディレクトリ。</p>
+                        <p>・　　　　　差分　　　　　→　ファイルの修正前と修正後の違い。</p>
+                        <p>・　　　　フォーク　　　　→　リポジトリの複製。</p>
+                        <p>・　　　　origin　　　　　→　リモートリポジトリ。</p>
+                        <p>・　　　　ブランチ　　　　→同じリポジトリ内で並行して作業する際に必要な機能。</p>
+                        <p>・　　　　マージ　　　　　→ブランチを融合すること。</p>
+
+                        <h3 class="heading-typeB">Gitコマンド</h3>
+
+                        <table>
+                            <tr>
+                                <th>pwd</th>
+                                <td>カレントディレクトリのパスの確認。</td>
+                            </tr>
+                            <tr>
+                                <th>mkdir<br> 相対パス/絶対パス</th>
+                                <td>新しいディレクトリの作成。</td>
+                            </tr>
+                            <tr>
+                                <th>ls</th>
+                                <td>ディレクトリ内のディレクトリ・ファイルの確認。</td>
+                            </tr>
+                            <tr>
+                                <th>ls -a</th>
+                                <td>すべてのディレクトリ・ファイルの表示。</td>
+                            </tr>
+                            <tr>
+                                <th>cd<br>相対パス/絶対パス</th>
+                                <td>カレントディレクトリの移動。</td>
+                            </tr>
+                            <tr>
+                                <th>git config --list</th>
+                                <td>設定内容の確認。</td>
+                            </tr>
+                            <tr>
+                                <th>git init</th>
+                                <td>カレントディレクトリにローカルリポジトリの作成。</td>
+                            </tr>
+                            <tr>
+                                <th>git clone SSH</th>
+                                <td>クローンの実行。</td>
+                            </tr>
+                            <tr>
+                                <th>git status</th>
+                                <td>ローカルリポジトリの状態の確認。</td>
+                            </tr>
+                            <tr>
+                                <th>git add<br> 相対パス/絶対パス</th>
+                                <td>ファイルをステージングエリアに登録。</td>
+                            </tr>
+                            <tr>
+                                <th>git diff</th>
+                                <td>ワークツリーとステージングエリアの差分の確認。ステージングエリア登録後にどんな変更をしたかが分かる。</td>
+                            </tr>
+                            <tr>
+                                <th>git diff --cached</th>
+                                <td>ステージングエリアとGitディレクトリの差分の確認。ステージングエリアにどんな変更が登録されているかが分かる。</td>
+                            </tr>
+                            <tr>
+                                <th>git commit</th>
+                                <td>コミットする。</td>
+                            </tr>
+                            <tr>
+                                <th>git commit -m<br>"コミットメッセージ"</th>
+                                <td>直接コミットメッセージを指定。</td>
+                            </tr>
+                            <tr>
+                                <th>git log</th>
+                                <td>コミットの履歴の確認。</td>
+                            </tr>
+                            <tr>
+                                <th>git log -p</th>
+                                <td>差分付きのコミットの履歴の確認。</td>
+                            </tr>
+                            <tr>
+                                <th>git remote</th>
+                                <td>リモートリポジトリの設定を確認・変更。</td>
+                            </tr>
+                            <tr>
+                                <th>git remote -v</th>
+                                <td>URL情報の確認</td>
+                            </tr>
+                            <tr>
+                                <th>code 相対パス/絶対パス</th>
+                                <td>エディターの表示。</td>
+                            </tr>
+                            <tr>
+                                <th>git branch<br> 作成するブランチ名</th>
+                                <td>ブランチの作成。</td>
+                            </tr>
+                            <tr>
+                                <th>git checkout<br> 切り替え先のブランチ名</th>
+                                <td>ブランチを切り替え、作業する。</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+             </div>
+
+                        <div id="pageBodySub">
+                            <a class="twitter-timeline" data-chrome="noheader nofooter" data-width="350" data-height="420" data-theme="light" href="https://twitter.com/saku_poyo2525?ref_src=twsrc%5Etfw">Tweets by saku_poyo2525</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <section class="newsList">
+                                <h3>お知らせ</h3>
+                                <ul>
+                                    <li>
+                                        <time datetime="2021-10-11">2021.10.11</time><br>
+                                        SakuのWebサイト「Saku BLOG」をオープン。
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+            </div>
+
+        <p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
+        <footer id="pageFoot">
+            <p id="copyright"><small>Copyright&copy; 2021 @Saku All Rights Reserved.</small></p>
+        </footer>
+    </div>
+
+</body>
+</html>
